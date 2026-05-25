@@ -51,10 +51,10 @@
                 Take control of your <br><span class="text-athletic-blue">performance.</span>
             </h1>
             <p class="text-gray-300 text-lg md:text-2xl mb-10 md:mb-12 max-w-2xl mx-auto font-light italic">
-                For the footballer who wants to perform consistently.
+                For the footballer who wants to take control of their performance
             </p>
             <a href="https://calendar.app.google/nGcat4whoqw8Anbw9" target="_blank" class="bg-athletic-blue text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl text-base md:text-lg font-black uppercase tracking-widest hover:scale-105 transition-transform inline-block italic shadow-2xl">
-                Book Your Free 15 Minute Consult
+                Book Your Free 30 Minute Consult
             </a>
         </div>
     </section>
@@ -87,7 +87,8 @@
                 <a href="https://calendar.app.google/nGcat4whoqw8Anbw9" target="_blank" class="inline-block bg-black text-white px-10 py-4 rounded-2xl font-black uppercase italic tracking-widest hover:bg-blue-600 transition-all shadow-lg">Lets Start</a>
             </div>
             <div class="relative order-1 md:order-2">
-                <img src="https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?auto=format&fit=crop&q=80&w=1000" alt="Focused Footballer" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover aspect-video md:aspect-auto">
+                <img src="https://images.unsplash.com/photo-1511210878170-0081d8995a9a?auto=format&fit=crop&q=80&w=1000" alt="Vibrant Youth Footballers" class="rounded-3xl shadow-2xl transition-all duration-700 w-full object-cover aspect-video md:aspect-auto">
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-full -z-10 blur-2xl opacity-20"></div>
             </div>
         </div>
     </section>
@@ -168,17 +169,17 @@
     <section id="book" class="py-24 md:py-32 bg-white text-black text-center">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl md:text-7xl font-black uppercase mb-6 italic leading-tight md:leading-[0.8] tracking-tighter">Get the most out of your training and matches today!</h2>
-            <p class="text-lg md:text-2xl font-medium text-gray-500 mb-10 italic">Serious inquiries only. If you aren't ready to improve your game, please don't book.</p>
+            <p class="text-xl md:text-2xl font-medium text-gray-500 mb-10 italic">Serious applications only. If you aren't ready to change your game, do not book.</p>
             <a href="https://calendar.app.google/nGcat4whoqw8Anbw9" target="_blank" class="bg-athletic-blue text-white px-8 md:px-12 py-5 md:py-6 rounded-2xl font-black uppercase italic tracking-widest hover:bg-black hover:scale-105 transition-all shadow-2xl text-lg md:text-xl">
                 Secure Your Spot
             </a>
-            <p class="mt-12 text-sm text-gray-500 font-black uppercase tracking-widest italic">For Serious Footballers Only</p>
+            <p class="mt-12 text-sm text-red-600 font-black uppercase tracking-widest italic">Strictly for Serious Footballers Only</p>
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-blue-600 text-white">
+    <section class="py-20 md:py-24 px-6 bg-blue-600 text-white">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black italic uppercase text-center mb-16">FAQ's</h2>
+            <h2 class="text-3xl md:text-5xl font-black italic uppercase text-center mb-12 md:mb-16">FAQ's</h2>
             <div class="space-y-4">
                 <details class="group border border-white/20 rounded-3xl p-6 transition-all hover:bg-white/10">
                     <summary class="flex justify-between items-center font-black uppercase cursor-pointer list-none text-lg md:text-xl italic">
@@ -190,4 +191,31 @@
                 <details class="group border border-white/20 rounded-3xl p-6 transition-all hover:bg-white/10">
                     <summary class="flex justify-between items-center font-black uppercase cursor-pointer list-none text-lg md:text-xl italic">
                         How long does the program go for?
-                        <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round"
+                        <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-blue-100 text-lg md:text-lg leading-relaxed italic">8 weeks. This gives us plenty of time to make the necessary adaptations to your physiology and see consistent results.</p>
+                </details>
+                <details class="group border border-white/20 rounded-3xl p-6 transition-all hover:bg-white/10">
+                    <summary class="flex justify-between items-center font-black uppercase cursor-pointer list-none text-lg md:text-xl italic">
+                        How long until I see results?
+                        <svg class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-blue-100 text-lg md:text-lg leading-relaxed italic">Immediately. You will see results during your first session with Dylan.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-500 text-xs border-t border-white/5 uppercase tracking-widest bg-black">
+        &copy; 2026 True Form Performance. All Rights Reserved.
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.3, rootMargin: '0px 0px -10% 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, observerOptions);
+        document.querySelectorAll('.timeline-item').forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>
